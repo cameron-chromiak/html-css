@@ -1,0 +1,131 @@
+body, html{
+  margin: 0;
+  height: 100%;
+  font-size:16px;
+  line-height: 1.5;
+  font-family: "Lato",sans-serif;
+
+}
+li{
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  color: #4b6584;
+  text-decoration: none;
+}
+.img-heading{
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2;
+  align-items: center;
+}
+.content{
+padding: 10vh 12vw;
+}
+
+.nav-bar{
+    display: flex;
+}
+.nav-item{
+  padding: 16px;
+  display: flex;
+}
+.nav-toggle{
+  display: none;
+}
+.bg-img1,.bg-img2, .bg-img3{
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-img1{
+  background-image:url("https://images.pexels.com/photos/260907/pexels-photo-260907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 100%;
+  color: white;
+  font-weight: 600;
+
+}
+.bg-img2{
+  background-image:url("https://images.pexels.com/photos/109919/pexels-photo-109919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 400px;
+  margin-bottom: -16px; /* FIXME: this is not how you fix that gap but whatever it works for desktop */
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+.bg-img3{
+  background-image:url("https://images.pexels.com/photos/9816/pexels-photo-9816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 100%;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+.section{
+  text-align: center;
+  padding: 40px 80px;
+  color: #666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.left-footer{
+  flex: .4;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.center-footer{
+  flex: .3;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.right-footer{
+  flex: .3;
+  /* border: 1px solid black; */
+  text-align: left;
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: -17px; /* FIXME:  */
+}
+@media only screen and (max-width: 768px) {
+  .nav-bar,
+  .nav-items{
+    flex-direction: column;
+  }
+  .nav-item{
+    display: none;
+    align-self: center;
+  }
+  .nav-toggle{ /* TODO: Move to right for better experience */
+    display: flex;
+  }
+  .btn-align-end{
+    align-self: center;
+  }
+  .left-footer{
+    flex: .6;
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+  .center-footer{
+    flex: .2;
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+  .right-footer{
+    flex: .2;
+    /* border: 1px solid black; */
+    text-align: left;
+  }
+}

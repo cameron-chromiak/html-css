@@ -1,17 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <div>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  </script>
+    <meta charset="utf-8">
+    <title>Fashion</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+       <div class="nav-item">
+          <a href="#">Para LaX</a>
+        </div>
+        <div class="nav-toggle btn-align-end">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="nav-item"><a href="#">Link 1</a></div>
+        <div class="nav-item"><a href="#">Link 2</a></div>
+    </div>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit deserunt quaerat provident fuga, sit commodi voluptas repellendus dolore aliquam.
-    </p>
+    <div class="bg-img1">
+      <div class="content">
+        <span class="img-heading">These</span><br />
+        <span class="img-heading" id="line-two">are</span><br />
+        <span class="img-heading"id="line-three">people.</span>
+      </div>
+    </div>
+    <section class="section section-light">
+      <h3>Section One</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo et voluptatem esse asperiores. Neque consectetur quae delectus, explicabo, sunt quos facere atque inventore autem unde eligendi! Illum magnam odit est incidunt, ullam recusandae quisquam dolor saepe, ducimus perferendis similique blanditiis minus dicta distinctio quo doloremque aut, aspernatur iste fuga voluptatem! Odio deserunt eaque mollitia, commodi inventore atque, eligendi veritatis ut, facere incidunt, distinctio impedit sunt. Atque eveniet accusantium nesciunt accusamus magni aliquid quidem quo, hic fuga sint ex blanditiis, ipsum deleniti quisquam officia molestias qui, libero fugit quasi dicta. Quis, consectetur! Perferendis adipisci qui similique ab ducimus, temporibus tenetur ipsam!
+      </p>
+    </section>
+
+  <div class="bg-img2">
+    <div class="content">
+      <p>
+        YES WE CAN
+      </p>
+    </div>
   </div>
+
+  <section class="section section-dark">
+    <h3>Section One</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo et voluptatem esse asperiores. Neque consectetur quae delectus, explicabo, sunt quos facere atque inventore autem unde eligendi! Illum magnam odit est incidunt, ullam recusandae quisquam dolor saepe, ducimus perferendis similique blanditiis minus dicta distinctio quo doloremque aut, aspernatur iste fuga voluptatem! Odio deserunt eaque mollitia, commodi inventore atque, eligendi veritatis ut, facere incidunt, distinctio impedit sunt. Atque eveniet accusantium nesciunt accusamus magni aliquid quidem quo, hic fuga sint ex blanditiis, ipsum deleniti quisquam officia molestias qui, libero fugit quasi dicta. Quis, consectetur! Perferendis adipisci qui similique ab ducimus, temporibus tenetur ipsam!
+    </p>
+  </section>
+
+  <div class="bg-img3">
+    <div class="content">
+      <p>
+      FIND OUT HOW
+      </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="left-footer">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptas ullam distinctio, eligendi consectetur nesciunt libero dignissimos. Inventore corrupti velit ipsum nostrum omnis, error? Assumenda labore ut aliquam esse, quibusdam minima qui incidunt quam aut numquam aperiam ad fuga et temporibus fugit cum sequi odio earum saepe dolorum quis voluptas.</p>
+      </div>
+      <div class="center-footer">
+        <h2>Tools</h2>
+        <ul class="utilities">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+      <div class="right-footer">
+        <h2>Contact</h2>
+        <ul class="utilities">
+          <li><a href="#">Longer Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+  function classToggle() {
+  const navs = document.querySelectorAll('.nav-item')
+
+  navs.forEach(nav => nav.classList.toggle('nav-toggle'));
+  }
+  document.querySelector('.btn-align-end')
+  .addEventListener('click', classToggle);
+  </script>
 </body>
-</html>
